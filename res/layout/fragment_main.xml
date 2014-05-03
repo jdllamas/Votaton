@@ -6,17 +6,40 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.vcc.votaton.MainActivity$PlaceholderFragment" >
+    tools:context="com.vcc.votaton.MainActivity$PlaceholderFragment"
+    android:background="#12A1B1"
+    >
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="42dp"
-        android:layout_marginTop="71dp"
-        android:onClick="showPartidos"
-        android:text="@string/button_partido" />
+		android:id="@+id/angry_btn"
+		android:text="@string/button_partido"
+		android:textColor="#FFFFFF"
+		android:textSize="30sp"
+		android:onClick="showPartidos"
+		android:layout_width="140dp"
+		android:layout_height="140dp"
+		android:background="@drawable/button_partidos_fondo"
+		android:shadowColor="#A8A8A8"
+		android:shadowDx="0"
+		android:shadowDy="0"
+		android:shadowRadius="5"
+/>
+
+    <Button
+        android:id="@+id/button1"        
+        android:layout_alignTop="@+id/angry_btn"
+        android:layout_toRightOf="@+id/angry_btn"
+        android:text="@string/button_partido"
+		android:textColor="#FFFFFF"
+		android:textSize="30sp"
+		android:onClick="showPartidos"
+		android:layout_width="140dp"
+		android:layout_height="140dp"
+		android:background="@drawable/button_partidos_fondo"
+		android:shadowColor="#A8A8A8"
+		android:shadowDx="0"
+		android:shadowDy="0"
+		android:shadowRadius="5"
+        />
 
 </RelativeLayout>
