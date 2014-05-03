@@ -32,7 +32,7 @@
         android:layout_width="280dp"
         android:layout_height="140dp"
         android:layout_alignLeft="@+id/partidos"
-        android:layout_below="@+id/votos"
+        android:layout_below="@+id/partidos"
         android:layout_marginTop="18dp"
         android:background="@drawable/button_estadisticas_fondo"
         android:onClick="showPartidos"
@@ -51,14 +51,14 @@
         android:layout_alignBaseline="@+id/partidos"
         android:layout_alignBottom="@+id/partidos"
         android:layout_alignRight="@+id/button2"
-        android:background="@drawable/button_partidos_fondo"
+        android:background="@drawable/button_votos_fondo"
         android:onClick="showPartidos"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="@string/como_votar"
-        android:textColor="#FFFFFF"
-        android:textSize="27sp" />
+        />
+
+
 
 </RelativeLayout>

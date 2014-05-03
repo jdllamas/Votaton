@@ -1,0 +1,6 @@
+App Name: VotandoAndo
+
+Una aplicación diseñada con el fin de fomentar el voto consciente e informado mediante herramientas interactivas
+que buscan poner a la mano información de los partidos políticos, candidatos presidenciales y sus respectivas fórmulas.
+De igual forma contendrá estadísticas, beneficios del voto e información acerca de lo perjudicial que llega a ser el fraude
+electoral en el país. Buscamos difundir que en un país con conciencia el voto si marca la diferencia.
