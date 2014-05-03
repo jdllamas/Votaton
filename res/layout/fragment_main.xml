@@ -8,14 +8,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.vcc.votaton.MainActivity$PlaceholderFragment" >
 
-    <ImageButton
-        android:id="@+id/imageButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="52dp"
-        android:src="@drawable/partidos_politicos" />
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="71dp"
+        android:onClick="showPartidos"
+        android:text="@string/button_partido" />
 
 </RelativeLayout>
