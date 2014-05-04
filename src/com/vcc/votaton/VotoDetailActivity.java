@@ -1,12 +1,14 @@
 package com.vcc.votaton;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * An activity representing a single Voto detail screen. This activity is only
@@ -47,13 +49,13 @@ public class VotoDetailActivity extends FragmentActivity {
 					.add(R.id.voto_detail_container, fragment).commit();
 		}
 		
-		TextView texto =(TextView) findViewById(R.id.text_estadistica);		
+		TextView texto =(TextView) findViewById(R.id.text_voto);		
 		Intent intent = getIntent();
 		String selectedID = intent.getStringExtra(EstadisticasDetailFragment.ARG_ITEM_ID);
 		int elementoSelec = Integer.parseInt(selectedID);
 		String subtitle="";
 		int uri=0;
-		ImageView imageview= (ImageView)findViewById(R.id.img_estadistica);		
+		ImageView imageview= (ImageView)findViewById(R.id.img_voto);		
 		switch (elementoSelec) {
 			case 1:
 				subtitle = (String) getString(R.string.MPobrezaN);
@@ -68,6 +70,13 @@ public class VotoDetailActivity extends FragmentActivity {
 				uri = R.drawable.epobrezam;
 				break;
 		}
+		try{
+			texto.setText(subtitle);
+			Drawable res = getResources().getDrawable(uri);
+			imageview.setBackgroundDrawable(res);
+			}catch(Exception ex){
+				Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
+			}
 		
 	}
 

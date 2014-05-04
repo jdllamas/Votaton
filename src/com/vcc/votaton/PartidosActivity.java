@@ -1,8 +1,8 @@
 package com.vcc.votaton;
 
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -10,27 +10,26 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+import android.os.Build;
 
-
-public class MainActivity extends ActionBarActivity {
+public class PartidosActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_partidos);
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
-
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.partidos, menu);
 		return true;
 	}
 
@@ -57,38 +56,35 @@ public class MainActivity extends ActionBarActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_main, container,
-					false);
+			View rootView = inflater.inflate(R.layout.fragment_partidos,
+					container, false);
 			return rootView;
 		}
 	}
-
-
-	public void ShowEstadistica(View view) {
-		try{
-			Intent intent = new Intent(this, EstadisticasActivity.class);			
-			startActivity(intent);			
-		} catch(Exception ex){
-			Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
-		}
-
-	}
-
-	public void ShowVotos(View view) {
-		try{
-			Intent intent = new Intent(this, VotoListActivity.class);			
-			startActivity(intent);			
-		} catch(Exception ex){
-			Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
-		}
+	
+	public void Polo(View view){
+		Toast.makeText(this, "PoloOk", Toast.LENGTH_SHORT).show();
+		
 	}
 	
-	public void ShowPartidos(View view) {
-		try{
-			Intent intent = new Intent(this, PartidosActivity.class);			
-			startActivity(intent);			
-		} catch(Exception ex){
-			Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
-		}
+	public void Conservador(View view){
+		
 	}
+	
+	public void Verde(View view){
+		
+	}
+	
+	public void Unidad(View view){
+		
+	}
+	
+	public void Uribe(View view){
+		
+	}
+	
+	public void Blanco(View view){
+		
+	}
+
 }

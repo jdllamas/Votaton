@@ -68,6 +68,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.vcc.votaton.VotoListActivity" />
         </activity>
+        <activity
+            android:name="com.vcc.votaton.PartidosActivity"
+            android:label="@string/title_activity_partidos" >
+        </activity>
     </application>
 
 </manifest>

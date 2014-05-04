@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.vcc.votaton.PartidosActivity$PlaceholderFragment" >
+
+    <Button
+        android:id="@+id/polo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/polo"
+        android:onClick="Polo"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+    <Button
+        android:id="@+id/conservador"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/polo"
+        android:layout_alignBottom="@+id/polo"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/polo"
+        android:background="@drawable/conservador"
+        android:onClick="Conservador"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+    <Button
+        android:id="@+id/verde"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/polo"
+        android:layout_below="@+id/polo"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/verde"
+        android:onClick="Verde"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+    <Button
+        android:id="@+id/unidad"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/verde"
+        android:layout_alignBottom="@+id/verde"
+        android:layout_alignLeft="@+id/conservador"
+        android:background="@drawable/unidad"
+        android:onClick="Unidad"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+    <Button
+        android:id="@+id/buribe"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/verde"
+        android:layout_below="@+id/verde"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/uribe"
+        android:onClick="Uribe"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+    <Button
+        android:id="@+id/blanco"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/buribe"
+        android:layout_alignBottom="@+id/buribe"
+        android:layout_alignLeft="@+id/unidad"
+        android:background="@drawable/blanco"
+        android:onClick="Blanco"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/conservador"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Tarjeton Electoral"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

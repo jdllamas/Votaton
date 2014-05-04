@@ -22,7 +22,18 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="12sp"
             />
-
+        
+        <ImageView
+            android:id="@+id/img_voto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/text_voto"
+            android:layout_marginTop="16dp"            
+            android:paddingBottom="50dp"
+            android:paddingTop="50dp"
+            android:contentDescription="@string/statistics"
+            />
 
     </RelativeLayout>
     
