@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.vcc.votaton.EstadisticasDetailActivity"
-    tools:ignore="MergeRootFrame">
-    
+    tools:ignore="MergeRootFrame" >
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
@@ -20,11 +20,20 @@
             android:layout_marginTop="70dp"
             android:text="@string/MensajeE"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="12sp"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/img_estadistica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/text_estadistica"
+            android:layout_marginTop="16dp"            
+            android:paddingBottom="50dp"
+            android:paddingTop="50dp"
+            android:contentDescription="@string/statistics"
             />
 
-
     </RelativeLayout>
-    
-</FrameLayout>
 
+</FrameLayout>

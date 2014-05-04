@@ -1,11 +1,16 @@
 package com.vcc.votaton;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 
 /**
  * An activity representing a single Item detail screen. This activity is only
@@ -51,46 +56,66 @@ public class EstadisticasDetailActivity extends FragmentActivity {
 		String selectedID = intent.getStringExtra(EstadisticasDetailFragment.ARG_ITEM_ID);
 		int elementoSelec = Integer.parseInt(selectedID);
 		String subtitle="";
-
+		int uri=0;
+		ImageView imageview= (ImageView)findViewById(R.id.img_estadistica);		
 		switch (elementoSelec) {
 			case 1:
 				subtitle = (String) getString(R.string.MPobrezaN);
+				uri=R.drawable.epobrezan;
 				break;
 			case 2:
 				subtitle = (String) getString(R.string.MPobrezaE);
+				uri = R.drawable.epobrezae;
 				break;
 			case 3:
-				subtitle = (String) getString(R.string.MPobrezaM);				
+				subtitle = (String) getString(R.string.MPobrezaM);
+				uri = R.drawable.epobrezam;
 				break;
 			case 4:
 				subtitle = (String) getString(R.string.MIndiceG);
+				uri = R.drawable.eindiceg;
 				break;
 			case 5:
 				subtitle = (String) getString(R.string.MAnalfabetismo);
+				uri = R.drawable.eanalfabetismo;
 				break;
 			case 6:
 				subtitle = (String) getString(R.string.MRezagoE);
+				uri = R.drawable.erezagoe;
 				break;
 			case 7:
 				subtitle = (String) getString(R.string.MTrabajoInfantil);
+				uri = R.drawable.etrabajoinfantil;
 				break;
 			case 8:
 				subtitle = (String) getString(R.string.MTrabajoInformal);
+				uri = R.drawable.etrabajoinformal;
 				break;
 			case 9:
 				subtitle = (String) getString(R.string.MDesempleoAltaD);
+				uri = R.drawable.edesempleoaltad;
 				break;
 			case 10:
 				subtitle = (String) getString(R.string.MHogarInadecuadoME);
+				uri = R.drawable.ehogarinadecuadome;
 				break;
 			case 11:
 				subtitle = (String) getString(R.string.MHogarSinAS);
+				uri = R.drawable.ehogarsinas;
 				break;
 			case 12:
 				subtitle = (String) getString(R.string.MHogarSinAFAM);
+				uri = R.drawable.ehogarsinafam;
 				break;
 		}
+		try{
 		text1.setText(subtitle);
+		Drawable res = getResources().getDrawable(uri);
+		imageview.setBackgroundDrawable(res);
+		}catch(Exception ex){
+			Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
+		}
+
 		
 	}
 

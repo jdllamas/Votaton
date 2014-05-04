@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * An activity representing a single Voto detail screen. This activity is only
@@ -44,6 +46,29 @@ public class VotoDetailActivity extends FragmentActivity {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.voto_detail_container, fragment).commit();
 		}
+		
+		TextView texto =(TextView) findViewById(R.id.text_estadistica);		
+		Intent intent = getIntent();
+		String selectedID = intent.getStringExtra(EstadisticasDetailFragment.ARG_ITEM_ID);
+		int elementoSelec = Integer.parseInt(selectedID);
+		String subtitle="";
+		int uri=0;
+		ImageView imageview= (ImageView)findViewById(R.id.img_estadistica);		
+		switch (elementoSelec) {
+			case 1:
+				subtitle = (String) getString(R.string.MPobrezaN);
+				uri=R.drawable.epobrezan;
+				break;
+			case 2:
+				subtitle = (String) getString(R.string.MPobrezaE);
+				uri = R.drawable.epobrezae;
+				break;
+			case 3:
+				subtitle = (String) getString(R.string.MPobrezaM);
+				uri = R.drawable.epobrezam;
+				break;
+		}
+		
 	}
 
 	@Override
