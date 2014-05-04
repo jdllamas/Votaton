@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Votaton</string>
+    <string name="app_name">Votando, Ando</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="button_partido">Partidos Politicos</string>
     <string name="como_votar">Como Votar</string>
     <string name="statistics">Estadisticas</string>
-    <string name="fondo">#AEFD23</string>    
+    <string name="fondo">#AEFD23</string>
     <string name="title_item_list">¿Cómo está el país?</string>
     <string name="title_item_detail">¿Cómo está el país?</string>
-	<string name="MensajeE">ErrorNoCogiEstadistico</string>
-	
-	<!-- <string name=""></string> -->
-	
+    <string name="MensajeE">ErrorNoCogiEstadistico</string>
+    <string name="title_activity_partidos">PartidosActivity</string>
     <string name="MPobrezaN">Calcula la pobreza a partir de los ingresos monetarios de la persona o grupo evaluado.</string>
-	<string name="MPobrezaE">Situación en que la persona no llega a las condiciones mínimas de supervivencia.</string>
-	<string name="MPobrezaM">Calcula la pobreza bajo 5 indicadores: condiciones educativas, condiciones de la niñez y juventud, trabajo, salud y servicios públicos y condiciones en la vivienda, aquellas con menos de 33% se consideran pobres.</string>
-    
-    
+    <string name="MPobrezaE">Situación en que la persona no llega a las condiciones mínimas de supervivencia.</string>
+    <string name="MPobrezaM">Calcula la pobreza bajo 5 indicadores: condiciones educativas, condiciones de la niñez y juventud, trabajo, salud y servicios públicos y condiciones en la vivienda, aquellas con menos de 33% se consideran pobres.</string>
+    <string name="MIndiceG">Indicador del Banco Mundial que mide que tan equitativa es la distribución de ingresos entre individuos u hogares. En proporción 0 representa equidad extrema y 100 (ó 1 según la escala) inequidad extrema.</string>
+    <string name="MAnalfabetismo">Se refiere a la condición de no saber leer ni escribir aunque hay diferentes grados de analfabetismo. La persona se considera afectada cuando en su hogar al menos una persona de 15 años o mas no sabe leer o escribir.</string>
+    <string name="MRezagoE">Se da cuando en el hogar hay al menos un niño entre 7 y 17 años con un número de años escolares aprobados menor al que la norma establece.</string>
+    <string name="MTrabajoInfantil">Actividades de producción o comercialización de bienes o servicios, con o sin remuneración, de forma independiente o en servicio de otra persona hecha por menores de 18 años sin cumplir ciertos requerimientos legales.</string>
+    <string name="MTrabajoInformal">Actividades mercantiles que se desarrollan con recursos de los hogares sin constituir empresas con personalidad jurídica propia. Las relaciones laborales informales no se sujetan a la legislación laboral.</string>
+    <string name="MDesempleoAltaD">Se da cuando en el hogar al menos una persona perteneciente a la Población Económicamente Activa ha estado desempleada por más de 12 meses.</string>
+    <string name="MHogarInadecuadoME">Se da cuando la persona pertenece a hogar sin servicio público de alcantarillado y en los hogares rurales cuando tienen inodoro sin conexión, bajamar o no tienen servicio sanitario.</string>
+    <string name="MHogarSinAS">Un hogar no tiene aseguramiento en salud si al menos una persona mayor de 5 años no está asegurada.</string>
+    <string name="MHogarSinAFAM">Se da cuando la persona pertenece a un hogar donde no hay servicio de acueducto y en caso de hogares rurales cuando obtienen el agua de pozo sin bomba.</string>
+    <string name="title_voto_list">Votos</string>
+    <string name="title_voto_detail">Voto Detail</string>
+
 </resources>

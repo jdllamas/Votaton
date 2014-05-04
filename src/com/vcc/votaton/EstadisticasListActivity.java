@@ -19,7 +19,7 @@ import android.support.v4.app.FragmentActivity;
  * This activity also implements the required {@link EstadisticasListFragment.Callbacks}
  * interface to listen for item selections.
  */
-public class EstadisticasActivity extends FragmentActivity implements
+public class EstadisticasListActivity extends FragmentActivity implements
 		EstadisticasListFragment.Callbacks {
 
 	/**

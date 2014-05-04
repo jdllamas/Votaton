@@ -13,17 +13,17 @@ import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
-		
+
 	}
 
 	@Override
@@ -62,21 +62,24 @@ public class MainActivity extends ActionBarActivity {
 			return rootView;
 		}
 	}
-	
-		
+
+
 	public void ShowEstadistica(View view) {
 		try{
-			Intent intent = new Intent(this, EstadisticasActivity.class);
-			Toast.makeText(this, "new Intent", Toast.LENGTH_SHORT).show();
-			startActivity(intent);
-			Toast.makeText(this, "startActivity", Toast.LENGTH_SHORT).show();
+			Intent intent = new Intent(this, EstadisticasActivity.class);			
+			startActivity(intent);			
 		} catch(Exception ex){
 			Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
 		}
-		
+
 	}
 
-	public void ShowPartidos(View view) {
-		Toast.makeText(this, "Prueba", Toast.LENGTH_SHORT).show();
+	public void ShowVotos(View view) {
+		try{
+			Intent intent = new Intent(this, VotoListActivity.class);			
+			startActivity(intent);			
+		} catch(Exception ex){
+			Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
+		}
 	}
 }

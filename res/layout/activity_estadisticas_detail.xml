@@ -1,17 +1,17 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/item_detail_container"
+    android:id="@+id/estadisticas_detail_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.vcc.votaton.ItemDetailActivity"
-    tools:ignore="MergeRootFrame" >
-
+    tools:context="com.vcc.votaton.EstadisticasDetailActivity"
+    tools:ignore="MergeRootFrame">
+    
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/text_estadistica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -25,6 +25,6 @@
 
 
     </RelativeLayout>
-
+    
 </FrameLayout>
 

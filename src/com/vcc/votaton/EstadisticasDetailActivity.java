@@ -10,17 +10,17 @@ import android.widget.TextView;
 /**
  * An activity representing a single Item detail screen. This activity is only
  * used on handset devices. On tablet-size devices, item details are presented
- * side-by-side with a list of items in a {@link EstadisticasActivity}.
+ * side-by-side with a list of items in a {@link EstadisticasListActivity}.
  * <p>
  * This activity is mostly just a 'shell' activity containing nothing more than
- * a {@link ItemDetailFragment}.
+ * a {@link EstadisticasDetailFragment}.
  */
-public class ItemDetailActivity extends FragmentActivity {
+public class EstadisticasDetailActivity extends FragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_item_detail);
+		setContentView(R.layout.activity_estadisticas_detail);
 
 		// Show the Up button in the action bar.
 		getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -38,30 +38,59 @@ public class ItemDetailActivity extends FragmentActivity {
 			// Create the detail fragment and add it to the activity
 			// using a fragment transaction.
 			Bundle arguments = new Bundle();
-			arguments.putString(ItemDetailFragment.ARG_ITEM_ID, getIntent()
-					.getStringExtra(ItemDetailFragment.ARG_ITEM_ID));
-			ItemDetailFragment fragment = new ItemDetailFragment();
+			arguments.putString(EstadisticasDetailFragment.ARG_ITEM_ID, getIntent()
+					.getStringExtra(EstadisticasDetailFragment.ARG_ITEM_ID));
+			EstadisticasDetailFragment fragment = new EstadisticasDetailFragment();
 			fragment.setArguments(arguments);
 			getSupportFragmentManager().beginTransaction()
-					.add(R.id.item_detail_container, fragment).commit();
+					.add(R.id.estadisticas_detail_container, fragment).commit();
 		}
 		
-		TextView text1 =(TextView) findViewById(R.id.textView1);		
+		TextView text1 =(TextView) findViewById(R.id.text_estadistica);		
 		Intent intent = getIntent();
-		String selectedID = intent.getStringExtra(ItemDetailFragment.ARG_ITEM_ID);
+		String selectedID = intent.getStringExtra(EstadisticasDetailFragment.ARG_ITEM_ID);
 		int elementoSelec = Integer.parseInt(selectedID);
-		
-		
+		String subtitle="";
+
 		switch (elementoSelec) {
 			case 1:
-				String subtitle = (String) getString(R.string.MPobrezaM);
-				text1.setText(subtitle);
-				
+				subtitle = (String) getString(R.string.MPobrezaN);
 				break;
 			case 2:
-				text1.setText("soy texto del 2");
+				subtitle = (String) getString(R.string.MPobrezaE);
+				break;
+			case 3:
+				subtitle = (String) getString(R.string.MPobrezaM);				
+				break;
+			case 4:
+				subtitle = (String) getString(R.string.MIndiceG);
+				break;
+			case 5:
+				subtitle = (String) getString(R.string.MAnalfabetismo);
+				break;
+			case 6:
+				subtitle = (String) getString(R.string.MRezagoE);
+				break;
+			case 7:
+				subtitle = (String) getString(R.string.MTrabajoInfantil);
+				break;
+			case 8:
+				subtitle = (String) getString(R.string.MTrabajoInformal);
+				break;
+			case 9:
+				subtitle = (String) getString(R.string.MDesempleoAltaD);
+				break;
+			case 10:
+				subtitle = (String) getString(R.string.MHogarInadecuadoME);
+				break;
+			case 11:
+				subtitle = (String) getString(R.string.MHogarSinAS);
+				break;
+			case 12:
+				subtitle = (String) getString(R.string.MHogarSinAFAM);
 				break;
 		}
+		text1.setText(subtitle);
 		
 	}
 
@@ -77,7 +106,7 @@ public class ItemDetailActivity extends FragmentActivity {
 			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
 			//
 			NavUtils.navigateUpTo(this,
-					new Intent(this, EstadisticasActivity.class));
+					new Intent(this, EstadisticasListActivity.class));
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

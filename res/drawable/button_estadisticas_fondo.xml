@@ -32,7 +32,7 @@
         </shape>
     </item>
 	<item>        
-        <bitmap android:src="@drawable/tarj"            
+        <bitmap android:src="@drawable/estat"            
             />
         <padding
             android:left="2dp"
