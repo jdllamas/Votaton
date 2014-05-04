@@ -3,6 +3,9 @@ package com.vcc.votaton;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -69,6 +72,7 @@ public class PartidosActivity extends ActionBarActivity {
 	
 	public void Conservador(View view){
 		
+		
 	}
 	
 	public void Verde(View view){
@@ -84,7 +88,6 @@ public class PartidosActivity extends ActionBarActivity {
 	}
 	
 	public void Blanco(View view){
-		
-	}
+				}
 
 }

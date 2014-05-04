@@ -53,7 +53,7 @@
                 android:value="com.vcc.votaton.ItemListActivity" />
         </activity>
         <activity
-            android:name="com.vcc.votaton.VotosListActivity"
+            android:name="com.vcc.votaton.VotosListActivity"            
             android:label="@string/title_item_list" >
         </activity>
         <activity
@@ -70,7 +70,15 @@
         </activity>
         <activity
             android:name="com.vcc.votaton.PartidosActivity"
-            android:label="@string/title_activity_partidos" >
+            android:label="@string/title_activity_partidos"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vcc.votaton.CandidatoActivity"
+            android:label="@string/title_activity_candidato"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

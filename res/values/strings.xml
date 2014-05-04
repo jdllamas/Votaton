@@ -12,7 +12,6 @@
     <string name="title_item_detail">¿Cómo está el país?</string>
     <string name="MensajeE">ErrorNoCogiEstadistico</string>
     <string name="title_activity_partidos">PartidosActivity</string>
-    
     <string name="MPobrezaN">Calcula la pobreza a partir de los ingresos monetarios de la persona o grupo evaluado.</string>
     <string name="MPobrezaE">Situación en que la persona no llega a las condiciones mínimas de supervivencia.</string>
     <string name="MPobrezaM">Calcula la pobreza bajo 5 indicadores: condiciones educativas, condiciones de la niñez y juventud, trabajo, salud y servicios públicos y condiciones en la vivienda, aquellas con menos de 33% se consideran pobres.</string>
@@ -25,8 +24,8 @@
     <string name="MHogarInadecuadoME">Se da cuando la persona pertenece a hogar sin servicio público de alcantarillado y en los hogares rurales cuando tienen inodoro sin conexión, bajamar o no tienen servicio sanitario.</string>
     <string name="MHogarSinAS">Un hogar no tiene aseguramiento en salud si al menos una persona mayor de 5 años no está asegurada.</string>
     <string name="MHogarSinAFAM">Se da cuando la persona pertenece a un hogar donde no hay servicio de acueducto y en caso de hogares rurales cuando obtienen el agua de pozo sin bomba.</string>
-    
     <string name="title_voto_list">Votos</string>
     <string name="title_voto_detail">Voto Detail</string>
+    <string name="title_activity_candidato">CandidatoActivity</string>
 
 </resources>
