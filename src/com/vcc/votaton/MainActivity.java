@@ -2,6 +2,7 @@ package com.vcc.votaton;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -9,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
 
 public class MainActivity extends ActionBarActivity {
 	
@@ -61,8 +63,20 @@ public class MainActivity extends ActionBarActivity {
 		}
 	}
 	
-	public void showPartidos(View view) {
-		Toast.makeText(this.getApplicationContext(), "Entro al envento de Partidos", Toast.LENGTH_SHORT).show();
+		
+	public void ShowEstadistica(View view) {
+		try{
+			Intent intent = new Intent(this, EstadisticasActivity.class);
+			Toast.makeText(this, "new Intent", Toast.LENGTH_SHORT).show();
+			startActivity(intent);
+			Toast.makeText(this, "startActivity", Toast.LENGTH_SHORT).show();
+		} catch(Exception ex){
+			Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
+		}
+		
 	}
 
+	public void ShowPartidos(View view) {
+		Toast.makeText(this, "Prueba", Toast.LENGTH_SHORT).show();
+	}
 }

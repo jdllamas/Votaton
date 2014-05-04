@@ -1,30 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<shape
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="oval" >
-	<corners
-		android:radius="14dp"
-	/>
-	<gradient
-		android:angle="90"
-		android:centerX="50%"
-		android:centerColor="#7995A8"
-		android:startColor="#000000"
-		android:endColor="#EDEDED"
-		android:type="linear"
-	/>
-	<padding
-		android:left="0dp"
-		android:top="0dp"
-		android:right="0dp"
-		android:bottom="0dp"
-	/>
-	<size
-		android:width="150dp"
-		android:height="150dp"
-	/>
-	<stroke
-		android:width="3dp"
-		android:color="#878787"
-	/>
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape                		
+    		android:shape="rectangle" 
+    		    
+    	>    
+			<corners
+			    android:bottomRightRadius="10dp"
+            	android:bottomLeftRadius="10dp"
+            	android:topLeftRadius="10dp"
+            	android:topRightRadius="10dp"				
+			/>
+			<padding
+				android:left="0dp"
+				android:top="0dp"
+				android:right="0dp"
+				android:bottom="0dp"
+			/>
+			<size
+				android:width="150dp"
+				android:height="150dp"
+			/>
+			<stroke
+				android:width="7dp"
+				android:color="#878787"
+			/>
+		</shape>	
+	</item>
+	<item>        
+        <bitmap android:src="@drawable/estat"            
+            />
+        <padding
+            android:left="2dp"
+			android:top="2dp"
+			android:right="2dp"
+			android:bottom="2dp"
+            />
+    </item>
+</layer-list>	

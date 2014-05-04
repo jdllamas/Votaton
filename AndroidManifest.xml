@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="19" />
 
     <application
@@ -21,6 +21,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vcc.votaton.EstadisticasActivity"
+            android:label="@string/title_item_list" >
+        </activity>
+        <activity
+            android:name="com.vcc.votaton.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName="com.vcc.votaton.EstadisticasActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vcc.votaton.ItemListActivity" />
         </activity>
     </application>
 

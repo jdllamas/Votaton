@@ -7,6 +7,16 @@
     <string name="button_partido">Partidos Politicos</string>
     <string name="como_votar">Como Votar</string>
     <string name="statistics">Estadisticas</string>
-    <string name="fondo">#AEFD23</string>
-
+    <string name="fondo">#AEFD23</string>    
+    <string name="title_item_list">¿Cómo está el país?</string>
+    <string name="title_item_detail">¿Cómo está el país?</string>
+	<string name="MensajeE">ErrorNoCogiEstadistico</string>
+	
+	<!-- <string name=""></string> -->
+	
+    <string name="MPobrezaN">Calcula la pobreza a partir de los ingresos monetarios de la persona o grupo evaluado.</string>
+	<string name="MPobrezaE">Situación en que la persona no llega a las condiciones mínimas de supervivencia.</string>
+	<string name="MPobrezaM">Calcula la pobreza bajo 5 indicadores: condiciones educativas, condiciones de la niñez y juventud, trabajo, salud y servicios públicos y condiciones en la vivienda, aquellas con menos de 33% se consideran pobres.</string>
+    
+    
 </resources>
